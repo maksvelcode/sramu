@@ -1,40 +1,47 @@
-// Дождаться полной загрузки страницы перед началом выполнения скрипта
 document.addEventListener("DOMContentLoaded", function() {
-    // Получить ссылки на элементы формы и списка историй
     const storyForm = document.getElementById("storyForm");
     const storyList = document.getElementById("storyList");
 
-    // Обработчик события отправки формы
-    storyForm.addEventListener("submit", function(event) {
-        event.preventDefault(); // Предотвратить стандартное действие отправки формы
+    // Попытка загрузить сохраненные истории из локального хранилища
+    const savedStories = JSON.parse(localStorage.getItem("stories")) || [];
 
-        // Получить значения полей формы
+    // Заполнение списка историй сохраненными данными
+    for (const savedStory of savedStories) {
+        const newStory = createStoryElement(savedStory.title, savedStory.author, savedStory.content);
+        storyList.appendChild(newStory);
+    }
+
+    storyForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
         const title = document.getElementById("title").value;
         const author = document.getElementById("author").value;
         const content = document.getElementById("content").value;
 
-        // Проверить, что все поля формы заполнены
         if (title && author && content) {
-            // Создать новый элемент истории и добавить его в список
             const newStory = createStoryElement(title, author, content);
             storyList.appendChild(newStory);
-            storyForm.reset(); // Сбросить значения формы
+
+            // Сохранение истории в локальное хранилище
+            const newSavedStory = { title, author, content };
+            savedStories.push(newSavedStory);
+            localStorage.setItem("stories", JSON.stringify(savedStories));
+
+            storyForm.reset();
         }
     });
 
-    // Функция для создания элемента истории
     function createStoryElement(title, author, content) {
-        const li = document.createElement("li"); // Создать элемент списка
-        li.classList.add("story-item"); // Добавить класс для стилизации
+        const li = document.createElement("li");
+        li.classList.add("story-item");
 
-        // Создать HTML-разметку для истории
         const storyContent = `
             <h3>${title}</h3>
             <p><strong>Автор:</strong> ${author}</p>
             <p>${content}</p>
         `;
 
-        li.innerHTML = storyContent; // Вставить разметку в элемент списка
-        return li; // Вернуть созданный элемент
+        li.innerHTML = storyContent;
+        return li;
     }
 });
