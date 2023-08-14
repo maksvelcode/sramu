@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Истории</title>
+</head>
+<body>
+    <header>
+        <h1>Делитесь своими историями</h1>
+    </header>
+    <main>
+        <section class="story-form">
+            <h2>Добавить историю</h2>
+            <form id="storyForm">
+                <label for="title">Заголовок:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Автор:</label>
+                <input type="text" id="author" name="author" required>
+                <label for="content">Содержание:</label>
+                <textarea id="content" name="content" rows="4" required></textarea>
+                <button type="submit">Добавить историю</button>
+            </form>
+        </section>
+        <section class="story-list">
+            <h2>Список историй</h2>
+            <ul id="storyList">
+                <!-- Здесь будут отображаться добавленные истории -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Все права защищены</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
