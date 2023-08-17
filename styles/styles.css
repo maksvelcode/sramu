@@ -94,14 +94,31 @@ color: rgb(3, 9, 94);
    padding-left: 20px;
    padding-right: 20px;
    color: rgb(141, 124, 102);
+
+   padding-bottom: 20px;
 }
 
+.block_golosa { 
+
+ margin-bottom: 10px;
+}
 .golos {
-   display: inline;
-
-
+   font-weight: 500px;
+   display: flex;
+     justify-content: space-around;
+     padding-bottom: 20px;
+    
  
 }
+
+.golos button {
+   font-size: 17px;
+   color: blue;
+
+   
+   
+}
+
 
 
 /* Стили формы */
