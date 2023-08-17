@@ -63,15 +63,17 @@ footer {
 }
 
 /* Стили списка историй */
-.story-list ul {
+.story-list ul, h2{
     list-style: none;
     padding: 0;
+    text-align:center;
 }
 
 .story-list li {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Медиа-запрос для адаптивности */
