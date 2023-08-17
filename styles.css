@@ -20,7 +20,7 @@ header, main, footer {
 header {
     background-color: #333;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 footer {
