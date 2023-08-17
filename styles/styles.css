@@ -1,0 +1,164 @@
+
+
+
+
+/* 
+ body {
+
+   background-image: url('font.jpg');
+  
+}  */
+
+
+/* body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+
+} */
+
+
+/* header,
+main,
+footer {
+   padding: 20px;
+} */
+
+/* header {
+   background-color: #333;
+   color: white;
+   text-align: left;
+} */
+
+footer {
+   text-align: center;
+   background-color: #f5f5f5;
+}
+
+.heder_block {
+   width: 100%;
+   height: 200px;
+padding-bottom: px;
+
+
+
+   background-color: #0c0808;
+   color: #ccc;
+   
+   
+   
+}
+
+.heder_block2 {
+   padding: 20px;
+   padding-top: 20px;
+}
+
+
+.add_history {
+   text-align: center;
+   font-size: 40px;
+   padding-bottom: 40px;
+   padding-top: 20px;
+   color: blue;
+   background-image: url(/fon/font.jpg);
+   
+   
+   
+}
+
+.name_story   {
+   font-size: 25px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   background-color: #0c0808;
+   color: aliceblue;
+
+}
+ .teg_story {
+   padding-top: 10px;
+   padding-left: 10px;
+   font-size: 20px;
+padding-bottom: 20px;
+color: rgb(3, 9, 94);
+ }
+
+
+.date_story  {
+   font-size: 20px;
+   color: rgb(52, 52, 218);
+}
+
+.story_text {
+   font-size: 17px;
+   padding-left: 20px;
+   padding-right: 20px;
+   color: rgb(141, 124, 102);
+}
+
+.golos {
+   display: inline;
+
+
+ 
+}
+
+
+/* Стили формы */
+
+.story-form {
+   border: 1px solid #ccc;
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+.story-form label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+.story-form input[type="text"],
+.story-form textarea {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.story-form button {
+   background-color: #333;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.story-form button:hover {
+   background-color: #555;
+}
+
+/* Стили списка историй */
+.story-list ul,
+h2 {
+   list-style: none;
+   padding: 0;
+   text-align: center;
+}
+
+.story-list li {
+   border: 1px solid #ccc;
+   padding: 10px;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+/* Медиа-запрос для адаптивности */
+@media (max-width: 600px) {
+
+   header,
+   footer {
+      padding: 10px;
+   }
+}
