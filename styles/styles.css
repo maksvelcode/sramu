@@ -1,44 +1,35 @@
 
 
 
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   margin: 5px;
+}
 
-/* 
- body {
 
-   background-image: url('font.jpg');
+.main {
+flex: 1 1 auto;
+}
+
+footer {
   
-}  */
+   display: flex;
+  
+   color: aliceblue;
+background-color: #0c0808;
 
+   width: 100%;
+      height: 100px;
+      
 
-/* body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-
-} */
-
-
-/* header,
-main,
-footer {
-   padding: 20px;
-} */
-
-/* header {
-   background-color: #333;
-   color: white;
-   text-align: left;
-} */
-
-footer {
-   text-align: center;
-   background-color: #f5f5f5;
 }
 
 .heder_block {
    width: 100%;
-   height: 200px;
-padding-bottom: px;
+   height: 150px;
+   
 
 
 
@@ -66,6 +57,22 @@ padding-bottom: px;
    
    
 }
+
+
+a:-webkit-any-link {
+   
+   color: blue;
+   cursor: copy;
+   box-shadow: 15px 10px 10px rgb(20, 13, 43);
+   /* box-shadow: 60px -16px rgb(43, 44, 44); */
+   /* box-shadow: 12px 12px 2px 1px rgba(0, 0,255, 2); */
+    /* box-shadow: 5px 5px rgb(74, 74, 75), -10px 0 .4em rgb(64, 64, 65); */
+
+}
+
+
+
+
 
 .name_story   {
    font-size: 25px;
