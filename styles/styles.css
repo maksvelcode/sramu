@@ -1,11 +1,25 @@
 
 
-
+.heder {
+   background-color: #0c0808;
+}
 .wrapper {
    min-height: 100%;
    display: flex;
    flex-direction: column;
-   margin: 5px;
+   margin: 20px;
+
+
+/*  
+    Под большим вопросом ))) 
+
+ 
+background-image: url(/fon/font.jpg);
+   background-size: no-repeat;
+   background-position: center;
+   background-size: cover;
+   width: 100%;  */
+
 }
 
 
@@ -26,9 +40,24 @@ background-color: #0c0808;
 
 }
 
+.heder_logo {
+   font-size: 50px;
+padding-top: 5px;
+padding-left: 10px;
+   color: aliceblue;
+
+}
+
+.heder_text {
+   font-size: 25px;
+      padding-top: 5px;
+      padding-left: 10px;
+      color: aliceblue;
+}
+
 .heder_block {
    width: 100%;
-   height: 150px;
+   height: 100px;
    
 
 
@@ -41,8 +70,9 @@ background-color: #0c0808;
 }
 
 .heder_block2 {
-   padding: 20px;
-   padding-top: 20px;
+  
+   
+   
 }
 
 
@@ -52,7 +82,13 @@ background-color: #0c0808;
    padding-bottom: 40px;
    padding-top: 20px;
    color: blue;
+
    background-image: url(/fon/font.jpg);
+   background-size: no-repeat;
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+   
    
    
    
@@ -80,6 +116,7 @@ a:-webkit-any-link {
    padding-left: 10px;
    background-color: #0c0808;
    color: aliceblue;
+   padding-top: 5px;
 
 }
  .teg_story {
@@ -103,12 +140,17 @@ color: rgb(3, 9, 94);
    color: rgb(141, 124, 102);
 
    padding-bottom: 20px;
+
+   
 }
 
 .block_golosa { 
 
  margin-bottom: 10px;
+
 }
+
+
 .golos {
    font-weight: 500px;
    display: flex;
@@ -176,6 +218,12 @@ h2 {
    padding: 10px;
    margin-bottom: 10px;
    text-align: center;
+}
+
+
+.info_footer {
+   display: flex;
+   flex-direction: end;
 }
 
 /* Медиа-запрос для адаптивности */
